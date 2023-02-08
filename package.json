@@ -1,0 +1,22 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Monitor de recursos cons display de datos en pantalla oled 128x64 con un arduino con info via Serial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MajorCrayon7047/Monitor-de-Recursos-externo.git"
+  },
+  "author": "MajorCrayon7047",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MajorCrayon7047/Monitor-de-Recursos-externo/issues"
+  },
+  "homepage": "https://github.com/MajorCrayon7047/Monitor-de-Recursos-externo#readme",
+  "dependencies": {
+    "serialport": "^10.5.0"
+  }
+}
