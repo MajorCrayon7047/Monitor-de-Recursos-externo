@@ -27,10 +27,7 @@ async function serialParser(){
     let temp = await si.cpuTemperature();
     temp = temp.main;
     temp = String(temp.toFixed());
-    while (temp.length <= 2){
-        temp = '0' + temp
-        console.log("TEMP: ", temp)
-    }
+    while (temp.length <= 2)temp = '0' + temp
 
     let a = `${CPU + mem + mem2 + temp}\n`
     console.log(a)
@@ -44,11 +41,8 @@ port.on("open", () => {
 
 parser.on('data', data =>{
     console.log('Atte Arduino:', data);
-    if (data == "y"){
-        console.log("El arduino recibio los datos")
-    }
 });
 
 setInterval(function() {
-    let a = String(serialParser())
+    serialParser()
   }, 3000);
